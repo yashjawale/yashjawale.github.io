@@ -38,23 +38,24 @@ The services I've setup yet are...
 
 ### OpenMediaVault
 
-For setting up Network Attached Storage (NAS)
+For setting up Network Attached Storage (NAS). It also has the ability to run other apps on top of it but I chose to do that on Proxmox LXCs.
 
 ### Caddy
 
-A reverse proxy so that other services can be accessed via a custom domain. It also handles generating Let's Encrypt SSL certficates via Cloudflare API
+A reverse proxy so that other services can be accessed via a custom domain. It also handles generating Let's Encrypt SSL certficates via Cloudflare API.
+This node is also enrolled into a Tailscale network so other services are available outside the LAN via a VPN.
 
 ### Stirling PDF
 
-A self hosted solution for PDF/Office file conversion needs
+A self hosted solution for PDF/Office file conversion needs. I haven't this one much but so far looks quite good. Especially the ability to have a document compressed to under a target size (very useful while filling forms with size limited file uploads).
 
 ### Paperless NGX
 
-Solution for holding all your scanned & digital documents in one place & auto tags them based on previous interactions. Currently my most loved service.
+Solution for holding all your scanned & digital documents in one place & auto tags them based on previous interactions. Currently my most loved service. The documents are also OCRed so you can find your desired doc quite easily with tags combined with textual search.
 
 ### Glance
 
-A dashboard to view statuses of all VMs & LXCs at once
+A dashboard to view statuses of all VMs & LXCs at once. The configuration is with a simple yaml file with a boatload of community widgets available for your use case.
 
 ### Joplin Server
 
