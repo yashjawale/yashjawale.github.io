@@ -91,6 +91,8 @@ Self hosting excalidraw is on my radar if it helps having multiple documents eas
 
 Power consumption is also something I'm worried about, currently it draws an average of 50 watts at any instant, if you're using newer hardware you can significantly reduce this footprint. (I've heard about some laptops consuming as low as just 5 watts during operation). But for me this'll mean buying new equipment which I don't plan on doing for a while...
 
+Currently I use a combination of a smart plug on schedule with cron & wake on power-on thingy to keep server ON during only certain period of day to reduce power consumption upto an extent.
+
 People also have self hosted firewalls (this one needs at least to NICs on the server), other security services like CrowdSec & DNS level Ad Blocking with projects like PiHole on these which I might consider ahead depending upon circumstances.
 
 These are some of the resources I highly recommend to get started yourself & to get more general information about the ~cult~ topic:
