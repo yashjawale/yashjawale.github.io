@@ -63,7 +63,7 @@ Self hosted syncing setup for Joplin clients. Although currently I'm also trying
 
 ### CUPS
 
-For sharing printer to the network (Since my current printer has a hard time with Mac drivers, so this is a godsend)
+For sharing printer to the network (Since my current printer has a hard time with Mac drivers, so this is a godsend given my printer is wired-only)
 
 ### SANE
 
