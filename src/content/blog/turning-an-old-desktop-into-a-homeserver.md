@@ -63,7 +63,7 @@ Self hosted syncing setup for Joplin clients. Although currently I'm also trying
 
 ### CUPS
 
-For sharing printer to the network (Since my current printer has a hard time with Mac drivers, so this is a godsend)
+For sharing printer to the network (Since my current printer has a hard time with Mac drivers, so this is a godsend given my printer is wired-only)
 
 ### SANE
 
@@ -101,6 +101,10 @@ These are some of the resources I highly recommend to get started yourself & to 
 <iframe src="https://www.youtube.com/embed/cMVcclMkp7g?si=AG_smmIK7Jyt7tM-" title="My New Found Addiction!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This video gave me a final push for homelabbing & since then I'm going deeper & deeper into this rabbit hole. But I'm enjoying the journey in all its glory & I'm excited for what's ahead to come 🙂
+
+Now, homelabbing definitely isn't for everyone & I'd only recommend to get started this way to people who love dabbling with computers & who won't mind a few hiccups along the way. To people getting started with this, I can guarantee that the journey will be quite informative & will offer a new perspective.
+
+But for someone who wants a "just works" solution, pre-built NAS solutions on the market are quite good & some of them also offer the functionality of installing apps in a click, although losing some of the control in return.
 
 <style>
 	/* CPU image */
