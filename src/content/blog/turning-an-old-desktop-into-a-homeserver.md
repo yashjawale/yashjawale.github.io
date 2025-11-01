@@ -10,13 +10,15 @@ This post describes my first go at having a functional homeserver instance by re
 Note: This post doesn't describe the how-to part of the topic & instead explores my experience with it so far, which might help someone gauge their usecase. But I do share some useful resources at the end.
 
 ## Why tho?
+
 I had this computer lying around from quite a while, earlier I used it for gaming (not AAA titles of course) but it never caught my fancy. Even before that, it served as my primary computer before I bought a laptop & even for satisfying my urge to distro hop in the past.
-Rather than gathering dust & letting its compute power go to waste, I figured lets give homelabbing a try & explore what its all about. 
+Rather than gathering dust & letting its compute power go to waste, I figured lets give homelabbing a try & explore what its all about.
 (Early disclaimer to whoever wants to start: It's a rabbit hole & you can't escape it, RUN!)
 
 But having services self hosted gives you another level of confidence for privacy & security of your data. While also giving you better performance for the services since your server only handles your services.
 
 ## The machine itself
+
 The computer I'm using isn't the most powerful thing in the world but definitely enough for the job. It originally had a Pentium CPU inside but over the years had its motherboard & CPU upgraded. Its current general specs are:
 
 - 2nd Gen Intel i3 4 core
@@ -29,35 +31,45 @@ The computer I'm using isn't the most powerful thing in the world but definitely
 ![Picture of my desktop under the table](../../assets/blogimages/turning-an-old-desktop-into-a-homeserver/cpu.jpg 'My humble little desktop')
 
 ## Software setup
+
 The server runs Proxmox VE as its main operating system, with the services running in either VMs or LXCs depending upon the use case. Having the services virtualized helps in long term maintainence with no dependency conflicts to worry about.
 
 The services I've setup yet are...
 
 ### OpenMediaVault
+
 For setting up Network Attached Storage (NAS)
 
 ### Caddy
+
 A reverse proxy so that other services can be accessed via a custom domain. It also handles generating Let's Encrypt SSL certficates via Cloudflare API
 
 ### Stirling PDF
+
 A self hosted solution for PDF/Office file conversion needs
 
 ### Paperless NGX
+
 Solution for holding all your scanned & digital documents in one place & auto tags them based on previous interactions. Currently my most loved service.
 
 ### Glance
+
 A dashboard to view statuses of all VMs & LXCs at once
 
 ### Joplin Server
+
 Self hosted syncing setup for Joplin clients. Although currently I'm also trying out Anytype that has peer-to-peer sync inbuilt. But I can self-host its backup server node.
 
 ### CUPS
+
 For sharing printer to the network (Since my current printer has a hard time with Mac drivers, so this is a godsend)
 
 ### SANE
+
 This is similar to CUPS but works for sharing scanners across the network, the [scanservejs](https://sbs20.github.io/scanservjs/) project also provides a very nice GUI for having your files scanned directly via browser.
 
 ## The Experience
+
 For some reason, I love installing new operating systems, so installing Proxmox & experiencing it for the first time was a process I'll always enjoy.
 
 Underneath Proxmox is based on Debian, so you have full freedom to install whatever you want (Although not recommended, please use VMs for that), this makes installing drivers a breeze since guides for Debian/Ubuntu are plentiful across the internet.
@@ -69,6 +81,7 @@ Hosting the services you use daily also adds a certain amount of flare to your w
 For hosting the services themselves, you'll always thank [Proxmox VE Helper Scripts](https://community-scripts.github.io/ProxmoxVE/) project everytime you want to try out a new service quickly.
 
 ## Future Aspects
+
 While the compute power I have is more than enough for my usecase, my current implementation leaves a lot to be desired.
 
 I'm planning on moving most of the stack to use Docker instead of LXCs as that'll make having backups a lot easier.
