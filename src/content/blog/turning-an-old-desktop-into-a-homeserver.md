@@ -111,6 +111,7 @@ But for someone who wants a "just works" solution, pre-built NAS solutions on th
 <style>
 	/* CPU image */
 	img[alt="Picture of my desktop under the table"] {
+		width: 100%;
   	max-width: 480px;
 	}
 </style>
