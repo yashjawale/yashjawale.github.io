@@ -103,6 +103,7 @@ Thanks for making it till here & I hope the time spent reading this post was wor
 	}
 	/* Backpack image */
 	img[alt="Picture of my backpack"] {
+		width: 100%;
   	max-width: 360px;
 	}
 </style>
