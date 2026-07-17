@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import partytown from '@astrojs/partytown'
 import icon from 'astro-icon'
+import { unified } from '@astrojs/markdown-remark'
 import rehypeFigureTitle from 'rehype-figure-title'
 import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
 import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs'
@@ -26,7 +27,9 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	markdown: {
-		remarkPlugins: [remarkReadingTime, remarkModifiedTime],
-		rehypePlugins: [rehypeFigureTitle, rehypeAccessibleEmojis],
+		processor: unified({
+			remarkPlugins: [remarkReadingTime, remarkModifiedTime],
+			rehypePlugins: [rehypeFigureTitle, rehypeAccessibleEmojis],
+		}),
 	},
 })
